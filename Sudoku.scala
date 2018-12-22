@@ -1,5 +1,5 @@
 object Sudoku extends App {
-  val easy_sudoku = 
+  val sudoku = 
   Array(
         Array(0, 0, 4, 0, 2, 8, 0, 0, 5),
         Array(0, 3, 2, 5, 0, 9, 0, 7, 0),
@@ -12,6 +12,9 @@ object Sudoku extends App {
         Array(9, 0, 0, 4, 8, 0, 6, 0, 0)
   )
 
+
+  
+
   // val name = scala.io.StdIn.readLine("What's your name? ")
   // println("Hello " + name)
 
@@ -22,15 +25,28 @@ object Sudoku extends App {
       var i = 0; // Vertical line
       var j = 0; // Horizontal line
       var a = 0;
-      var counter = 0;
 
       // For loop: Print all rows
       println();
       for(i <- 0 to 8){ 
         for(j <- 0 to 8){
-            print(easy_sudoku(i)(j) + " ");
-        }   
+            // Print the numbers
+            print(sudoku(i)(j) + " ");
+            // Print vertical lines
+            if(j == 2 || j == 5){
+               print("| ");
+            }
+        }
+        
+        // Print horizontal lines
         println();
+        if (i == 2 || i == 5){
+            for(a <- 0 to 10){
+                print("- ");  
+            }
+            println();
+        }
+        
       }
       println();
     
@@ -46,7 +62,7 @@ object Sudoku extends App {
   }
   */
 
-  printGrid(easy_sudoku)
+  printGrid(sudoku)
 
 
 
