@@ -9,13 +9,18 @@ To solve the game you have to respect the following rules :
 - Each square must contains all numbers from 1 to 9 ONLY once
 
 
-To solve the Sudoku, enter a number in the grid such as the following: A,6:1
+To solve the Sudoku, enter a number in the grid with the following syntax: Row,Col:Value 
+
+For instance, the example A,6:1 means :
 
 - A is the row
 - 6 is the column
-- 1 is the number
+- 1 is the value
 
 
-Enjoy the game !
+All the 0 number must be replaced by a number between 1 and 9.
+
+
+All the Best ! Enjoy the game !
 
 
